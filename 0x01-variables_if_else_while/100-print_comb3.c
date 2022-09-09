@@ -2,40 +2,34 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success/completed)
+ * Return: Always 0 (Success)
  */
 int main(void)
-
 {
-int number_left;
-int number_right;
+int x, y;
 
-
-for (number_left = 48; number_right <= 78; number_left++)
+for (x = 48; x <= 57; x++)
 {
-for (number_right = number_left + 1 ; number_right <= 78; number_right++)
+for (y = 48; y <= 57; y++)
 {
-
-putchar(number_left);
-putchar (number_right);
-
-
-if ((number_left == 56) && (number_right == 78))
+if (x == y || y <= x)
 {
-break;
 }
-
-putchar(',');
-putchar (' ');
-
+else
+{
+putchar(x);
+putchar(y);
+if (x == 56 && y == 57)
+{
 }
-
+else
+{
+putchar(44);
+putchar(' ');
 }
-
+}
+}
+}
 putchar('\n');
-
-
 return (0);
-
-
 }
